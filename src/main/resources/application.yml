@@ -1,0 +1,11 @@
+spring:
+  cache:
+    type: caffeine
+    caffeine:
+      spec: expireAfterWrite=10m,maximumSize=500
+
+github:
+  token: ${GITHUB_TOKEN:}
+
+server:
+  port: 8080
